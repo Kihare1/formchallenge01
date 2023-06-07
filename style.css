@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #EFEFEF;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 436px;
+  background: #535971;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.page {
+  width: 750px;
+  margin: auto;
+}
+
+header {
+width: 416px;
+margin-top: 140px;
+}
+
+h1 {
+  font-family: 'Staatliches', cursive;
+  font-size: 48px;
+  line-height: 60px;
+  color: white;
+}
+
+p {
+  margin-top: 18px;
+  font-size: 20px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
+form {
+  margin-top: 40px;
+  min-height: 300px;
+  padding: 34px 64px 64px;
+  background: white;
+
+  border: 0;
+  border-radius: 20px 20px 0px 0px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldset-wrapper {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fieldset-wrapper legend {
+  font-size: 24px;
+  line-height: 34px;
+  color: #535971;
+  font-family: 'Staatliches', cursive;
+
+  border-bottom: 1px solid #E6E6F0;
+  padding-bottom: 16px;
+  width: 100%;
+}
+
+fieldset {
+  border: 0;
+}
+
+.input-wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper input {
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #E6E6F0;
+  background: #FAFAFC;
+}
+
+.input-wrapper label {
+  font-size: 14px;
+  line-height: 24px;
+  color: #4E4958;
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+  font-size: 12px;
+  line-height: 20px;
+  color: #C1BCCC;
+  margin-left: 9px;
+}
+
+.col2 {
+  display: flex;
+  gap: 22px;
+}
+
+.col2 .input-wrapper input {
+  width: 300px;
+}
+
+.col3 {
+  display: flex;
+  gap: 10px;
+}
+
+.col3 .input-wrapper input {
+  width: 140px;
+}
+
+.col3 > div:nth-child(1) input {
+  width: 300px;
+  margin-right: 22px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  color: #535971;
+  font-family: 'Staatliches', cursive;
+  margin-top: 16px;
+}
+
+.col3 .input-wrapper {
+  margin-top: 11px;
+}
+
+footer {
+  background: #535971;
+  height: 160px;
+  margin-bottom: 100px;
+  border-radius: 0px 0px 20px 20px;
+  padding: 52px 71px;
+}
+
+footer input {
+  height: 55px;
+  width: 608px;
+  background: #FF5374;
+  border-radius: 20px;
+  border: 0;
+
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+footer input:hover {
+  background: #cf435f;
+  cursor: pointer;
+}
+
+input:invalid {
+  border: 2px solid #FF1010;
+}
